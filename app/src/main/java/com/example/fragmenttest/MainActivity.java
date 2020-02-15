@@ -26,14 +26,16 @@ import java.util.Date;
 import java.util.List;
 
 @RequiresApi(api = Build.VERSION_CODES.M)
-public class MainActivity extends FragmentActivity implements ViewPager.OnPageChangeListener ,View.OnClickListener {
+public class MainActivity extends FragmentActivity implements ViewPager.OnPageChangeListener, View.OnClickListener {
     private ViewPager viewPager;
     private ViewPageAdapter viewPageAdapter;
     private List<Fragment> list;
-
+    //测试
     private TextView tv_item_one;
+    //测试
     private TextView tv_item_two;
     private TextView tv_item_three;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +75,6 @@ public class MainActivity extends FragmentActivity implements ViewPager.OnPageCh
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
     }
-
 
 
     @Override
@@ -131,8 +132,9 @@ public class MainActivity extends FragmentActivity implements ViewPager.OnPageCh
 
     /**
      * 利用系统CallLog获取通话历史记录
+     *
      * @param activity
-     * @param num  要读取记录的数量
+     * @param num      要读取记录的数量
      * @return
      */
     public void getCallHistoryList(Activity activity, int num) {
@@ -178,7 +180,7 @@ public class MainActivity extends FragmentActivity implements ViewPager.OnPageCh
                 String callTypeStr = "";
                 switch (callType) {
                     case CallLog.Calls.INCOMING_TYPE:
-                        callTypeStr ="callin";
+                        callTypeStr = "callin";
                         break;
                     case CallLog.Calls.OUTGOING_TYPE:
                         callTypeStr = "callout";
