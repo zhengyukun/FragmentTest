@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示">
+    </Button>
+    <Button
+        android:id="@+id/bt_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全选">
+    </Button>
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除">
+    </Button>
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加">
+    </Button>
+</LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll" />
+
+    <TextView
+        android:id="@+id/txt_show_current_letter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#3CAC48"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:visibility="gone" />
+
+    <com.example.fragmenttest.SideBar
+        android:id="@+id/side_bar"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
+
